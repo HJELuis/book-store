@@ -1,5 +1,6 @@
 $auxiliarColor: #333;
 $fontColor: #fff;
+$componentsColor: #69A5A5;
 $displayValue: flex;
 $justifyValue: space-between;
 $position: center;
@@ -44,6 +45,31 @@ header {
 
     .header__img--mid {
         width: 100px;
+    }
+
+    .menu {
+        font-size: 1.5em;
+        width: 490px;
+        background-color: $fontColor;
+        padding: 25px;
+        box-sizing: $boxValue;
+        height: 100%;
+        display: $displayValue;
+        justify-content: $justifyValue;
+        position: fixed;   
+        left: -100%;
+        top: 100px;
+        box-shadow: -19px -1px 22px -15px rgb(0, 0, 0, 0.30);
+        .menu__icon {
+            .menu__img {
+                width: 2em;
+            }
+        }    
+    }
+
+    .hide {
+        left: 0;
+        top: 0;
     }
 }
 
@@ -97,6 +123,20 @@ header {
         .products__price {
             @extend %communStyle;
         }
+        .products__button {            
+            background-color: $componentsColor;
+            border-radius: 11px;
+            border: 2px solid $componentsColor;
+            display: inline-block;
+            margin-bottom: 20px;
+            cursor: pointer;
+            color: #ffffff;           
+            font-size: 16px;
+            font-weight: bold;
+            padding: 8px 18px;
+            text-decoration: none;
+            text-shadow: 0px 1px 0px $componentsColor;
+        }
     } 
 }
 
@@ -108,7 +148,7 @@ header {
     height: 100%;
     position: fixed;   
     right: -100%;
-    top: 100px;
+    top: 0px;
     box-shadow: -19px -1px 22px -15px rgb(0, 0, 0, 0.30);    
 
     .cart__title {
@@ -136,12 +176,30 @@ header {
         .cart__icon{
             width: 25px;
             cursor: pointer;
-            
+        
             .cart__img--delete-icon{    
                 width: 100%;
             }
         }        
     }
+
+    .heading {
+        display: $displayValue;
+        justify-content: $justifyValue;
+        align-items: center;
+        .cart__icon {
+            .cart__img {
+                width: 3em;
+            }
+        }
+    
+    }
+
+    
+}
+
+.hideCart {
+    right: 0;
 }
 
 @media (max-width: 820px) {
