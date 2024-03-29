@@ -11,14 +11,23 @@
     >
     <link rel="stylesheet" href="css/styles.css">
     <title>Tienda de libros</title>
+    <script src="js/functions.js" defer></script>
 </head>
 <body>
     <header class="header">        
         <i class="header__icon"><img src="assets/menu.png" alt="Icono Menu" class="header__img"></i>
         <img src="assets/book.png" alt="Logo Libro" class="header__img--mid">
         <i class="header__icon"><img src="assets/cart.png" alt="Icono Carrito" width="600" class="header__img"></i>
+        <aside class="menu">            
+            <div>
+                <p class="menu__home">Inicio</p>
+                <p class="menu__about">Sobre nosotros</p>
+                <p class="menu__contact">Contacto</p>
+            </div> 
+            <i class="menu__icon"><img src="assets/x-circle.svg" alt="Icono de cerrar" class="menu__img"></i>           
+        </aside>
     </header>
-    <main>
+    <main>       
         <section class="banner">
             <h2 class="banner__title">Libros nuevos</h2>
             <p class="banner__subtitle">Conoce nuestros libros nuevos</p>
@@ -28,58 +37,52 @@
                 <img src="img/el-pacto-secreto.jpg" alt="el pacto secreto" width="700" class="products__img">
                 <h3 class="products__title">EL PACTO SECRETO/Judy Rakowsky</h3>
                 <p class="products__price">$298.00</p>
+                <button class="products__button">Agregar al Carrito</button>
+
             </article>
             <article class="products__product">
                 <img src="img/el-fin-del-oceano-pacifico.jpg" alt="el fin del oceano pacífico" width="600" class="products__img">
                 <h3 class="products__title">EL FIN DEL OCÉANO PACÍFICO/Tomás González</h3>
                 <p class="products__price">$368.00</p>
+                <button class="products__button">Agregar al Carrito</button>
             </article>
             <article class="products__product">
                 <img src="img/no-mataras.jpg" alt="no matarás" class="products__img">
                 <h3 class="products__title">NO MATARÁS/Ana Sofía González</h3>
                 <p class="products__price">$299.00</p>
+                <button class="products__button">Agregar al Carrito</button>
             </article>
             <article class="products__product">
                 <img src="img/el-principe.jpg" alt="el príncipe de la niebla" width="700" class="products__img">
                 <h3 class="products__title">EL PRÍNCIPE DE LA NIEBLA/Carlos Ruiz Zafón</h3>
                 <p class="products__price">$300.00</p>
+                <button class="products__button">Agregar al Carrito</button>
             </article>
             <article class="products__product">
                 <img src="img/el-tunel.jpg" alt="el túnel" width="600" class="products__img">
                 <h3 class="products__title">EL TÚNEL/Ernesto Sabato</h3>
                 <p class="products__price">$368.00</p>
+                <button class="products__button">Agregar al Carrito</button>
             </article>
             <article class="products__product">
                 <img src="img/pedro-paramo.jpg" alt="pedro páramo" class="products__img">
                 <h3 class="products__title">PEDRO PÁRAMO/Juan Rulfo</h3>
                 <p class="products__price">$299.00</p>
+                <button class="products__button">Agregar al Carrito</button>
             </article>
             <article class="products__product">
                 <img src="img/la-tumba.jpg" alt="la tumba" width="700" class="products__img">
                 <h3 class="products__title">LA TUMBA/José Agustin</h3>
                 <p class="products__price">$298.00</p>
+                <button class="products__button">Agregar al Carrito</button>
             </article>
         </section>
         <section class="cart">
-            <h2 class="cart__title">CARRITO</h2>
-            <div class="cart__product">
-                <img src="assets/book-icon.png" alt="Libro" class="cart__img">
-                <p class="cart__product--name">Libro</p>
-                <p class="cart__price">$370</p>
-                <i class="cart__icon"><img src="assets/delete.png" alt="Icono quitar" class="cart__img--delete-icon"></i>
-            </div>
-            <div class="cart__product">
-                <img src="assets/book-icon.png" alt="Libro" class="cart__img">
-                <p class="cart__product--name">Libro</p>
-                <p class="cart__price">$370</p>
-                <i class="cart__icon"><img src="assets/delete.png" alt="Icono quitar" class="cart__img--delete-icon"></i>
-            </div>
-            <div class="cart__product">
-                <img src="assets/book-icon.png" alt="Libro" class="cart__img">
-                <p class="cart__product--name">Libro</p>
-                <p class="cart__price">$370</p>
-                <i class="cart__icon"><img src="assets/delete.png" alt="Icono quitar" class="cart__img--delete-icon"></i>
-            </div>
+            <div class="heading">
+                <i class="cart__icon"><img src="assets/x-circle.svg" alt="Icono de cerrar" class="cart__img"></i>
+                <h2 class="cart__title">CARRITO</h2>
+            </div>                                 
+            
         </section>
     </main>    
 </body>
