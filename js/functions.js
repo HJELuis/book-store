@@ -23,9 +23,11 @@ cartIcon.addEventListener("click", ()=>{
 
 //Evento para agregar al carrito
 const addButtons = document.getElementsByClassName("products__button");
-
 const closeCart = document.querySelector(".heading .cart__icon");
+const badge = document.querySelector(".badge__counter");
+let count = 0;
 
+//Cierra o abre el carrito
 closeCart.addEventListener("click", () => {
     cart.classList.toggle("hideCart");
 })
@@ -77,14 +79,15 @@ const createInCart = (info) => {
     return product;
 }
 
+//Agrega un elemento al carrito
 for (let addButton of addButtons) {
     addButton.addEventListener("click", () => {
         const info = getInfo(addButton);
         const book = createInCart(info);
         const cart = document.querySelector(".cart");        
         cart.appendChild(book);
-       
-                 
+        count++; 
+        badge.textContent = count.toString();
     });
 }
 

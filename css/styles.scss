@@ -71,6 +71,22 @@ header {
         left: 0;
         top: 0;
     }
+
+    .badge {
+        border: solid 1px white;
+        border-radius: 50%;
+        width: 2em;
+        height: 2em;
+        position: absolute;
+        right: 41px;
+        top: 35px;
+        .badge__counter {
+            position: absolute;
+            right: 10px;
+            top: -9px;
+            color: white;
+        }
+    }
 }
 
 .banner {
