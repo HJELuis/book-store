@@ -137,6 +137,7 @@ header .badge .badge__counter {
   right: -100%;
   top: 0px;
   box-shadow: -19px -1px 22px -15px rgba(0, 0, 0, 0.3);
+  overflow-y: auto;
 }
 .cart .cart__title {
   width: 100%;

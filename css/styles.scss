@@ -165,7 +165,8 @@ header {
     position: fixed;   
     right: -100%;
     top: 0px;
-    box-shadow: -19px -1px 22px -15px rgb(0, 0, 0, 0.30);    
+    box-shadow: -19px -1px 22px -15px rgb(0, 0, 0, 0.30); 
+    overflow-y: auto;   
 
     .cart__title {
         @include boxSet();
