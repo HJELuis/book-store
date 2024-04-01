@@ -91,4 +91,13 @@ for (let addButton of addButtons) {
     });
 }
 
+//Evento para eliminar elementos del carrito
 
+document.getElementById("carrito").addEventListener("click", (event) => {
+    const elementValue = String(event.target.classList[0]);
+    if(elementValue.includes("delete")) {
+        event.target.closest(".cart__product").remove();
+        count--;
+        badge.textContent = count.toString();
+    }
+});
