@@ -48,16 +48,16 @@ header {
     }
 
     .menu {
-        font-size: 1.5em;
-        width: 490px;
+        font-size: 1.5em;        
         background-color: $fontColor;
         padding: 25px;
         box-sizing: $boxValue;
+        width: 45%;
         height: 100%;
         display: $displayValue;
         justify-content: $justifyValue;
         position: fixed;   
-        left: -100%;
+        left: -250%;
         top: 100px;
         box-shadow: -19px -1px 22px -15px rgb(0, 0, 0, 0.30);
         .menu__icon {
@@ -259,6 +259,18 @@ header {
         }
     }
 
+    header {
+        .menu {
+            width: 42%;
+            .menu__icon {
+                .menu__img {
+                    width: 1.5em;
+                }
+            }
+        }
+    }
+    
+    
     .products {
         grid-template-columns: 1fr;
         padding: 10px;
@@ -297,6 +309,28 @@ header {
 
         .cart__price {
             @extend .cart__product--name;
+        }
+    }
+}
+
+@media (max-width: 290px) {
+    header {
+        .menu {
+            font-size: 1.2em;
+            width: 50%;
+            .menu__icon {
+                .menu__img {
+                    width: 1em;
+                }
+            }
+        }
+    }
+}
+
+@media (min-width: 750px) {
+    header {
+        .menu {
+            font-size: 2.5em;
         }
     }
 }

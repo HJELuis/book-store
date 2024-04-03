@@ -31,15 +31,15 @@ header .header__img--mid {
 }
 header .menu {
   font-size: 1.5em;
-  width: 490px;
   background-color: #fff;
   padding: 25px;
   box-sizing: border-box;
+  width: 45%;
   height: 100%;
   display: flex;
   justify-content: space-between;
   position: fixed;
-  left: -100%;
+  left: -250%;
   top: 100px;
   box-shadow: -19px -1px 22px -15px rgba(0, 0, 0, 0.3);
 }
@@ -212,6 +212,12 @@ header .badge .badge__counter {
   .banner .banner__subtitle {
     font-size: 16px;
   }
+  header .menu {
+    width: 42%;
+  }
+  header .menu .menu__icon .menu__img {
+    width: 1.5em;
+  }
   .products {
     grid-template-columns: 1fr;
     padding: 10px;
@@ -241,5 +247,19 @@ header .badge .badge__counter {
   }
   .cart .cart__product--name, .cart .cart__price {
     margin: 0;
+  }
+}
+@media (max-width: 290px) {
+  header .menu {
+    font-size: 1.2em;
+    width: 50%;
+  }
+  header .menu .menu__icon .menu__img {
+    width: 1em;
+  }
+}
+@media (min-width: 750px) {
+  header .menu {
+    font-size: 2.5em;
   }
 }/*# sourceMappingURL=styles.css.map */
