@@ -191,6 +191,17 @@ header .badge .badge__counter {
   header .header__icon {
     width: 30px;
   }
+  header .badge {
+    width: 1.5em;
+    height: 1.5em;
+    position: absolute;
+    right: 4px;
+    top: 19px;
+  }
+  header .badge .badge__counter {
+    right: 6px;
+    top: -13px;
+  }
   .products {
     grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
   }
@@ -200,6 +211,8 @@ header .badge .badge__counter {
   .cart {
     width: 400x;
     top: 80px;
+    position: fixed;
+    top: 0px;
   }
 }
 @media (max-width: 480px) {
