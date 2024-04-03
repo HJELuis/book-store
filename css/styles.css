@@ -126,6 +126,11 @@ header .badge .badge__counter {
   text-decoration: none;
   text-shadow: 0px 1px 0px #69A5A5;
 }
+.products .products__product .products__button:hover {
+  background-color: #ffffff;
+  color: #69A5A5;
+  text-shadow: 0px 0px 0px #69A5A5;
+}
 
 .cart {
   width: 500px;

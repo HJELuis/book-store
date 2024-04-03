@@ -152,6 +152,11 @@ header {
             padding: 8px 18px;
             text-decoration: none;
             text-shadow: 0px 1px 0px $componentsColor;
+            &:hover {
+                background-color: #ffffff;
+                color: $componentsColor;
+                text-shadow: 0px 0px 0px $componentsColor;
+            }
         }
     } 
 }
